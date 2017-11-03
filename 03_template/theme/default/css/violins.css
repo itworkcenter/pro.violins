@@ -421,6 +421,9 @@ footer {
 .modal-lg {
     max-width: 90%;
 }
+.popVideo-inner{
+    min-width: 60%;
+}
 
 @media screen and (max-width: 768px) {
     .select-list-item {
