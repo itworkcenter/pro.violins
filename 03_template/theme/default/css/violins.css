@@ -422,7 +422,7 @@ footer {
     max-width: 90%;
 }
 .popVideo-inner{
-    min-width: 60%;
+    min-width: 60%!important;
 }
 
 @media screen and (max-width: 768px) {
