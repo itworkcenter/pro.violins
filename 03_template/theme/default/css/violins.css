@@ -169,7 +169,11 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
+    display: none;
     z-index: 100;
+}
+.item.video .item-image-video{
+    display: block;
 }
 
 .item-image-video i.fa {

@@ -136,3 +136,9 @@ jQuery(document).on("click", ".page-list .item a", function () {
         jQuery(this).attr("href", href + "#" + getHrefargs())
     }
 })
+
+jQuery(document).on("click", ".item.video", function(){
+    var youtubeId = jQuery(this).data("youtube-id");
+    alert(youtubeId);
+
+});
