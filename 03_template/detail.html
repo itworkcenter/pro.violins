@@ -32,15 +32,18 @@
             </div>
         </div>
         <div class="container-fluid">
-            <div class="location">
-                <div id="StateSelect" class="states-options">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#StatesOptions">
+            <div id="Location" class="location">
+                <div class="location-box">
+                    <a href="index.html" class="btn btn-primary">
+                        <i class="fa fa-home" aria-hidden="true"></i> Home
+                    </a>
+                    <button type="button" class="btn btn-primary states-options" data-toggle="modal" data-target="#StatesOptions">
                         <strong>Location:</strong>
                         <span id="SelectShow">United States</span>
                         <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
                     </button>
+                    <div class="location-info">Please use location button to choose State.</div>
                 </div>
-                <div class="location-info">Please use location button to choose State.</div>
 
                 <!-- Popup opotions -->
                 <div class="modal fade" id="StatesOptions" tabindex="-1" role="dialog" aria-labelledby="StatesOptions" aria-hidden="true">

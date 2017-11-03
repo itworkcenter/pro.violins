@@ -43,16 +43,12 @@ ul {
 }
 
 .box-side {
-    float: left;
+    float: right;
     width: 150px;
 }
 
-.box>.box-side:first-child {
-    margin-right: 20px;
-}
-
 .box-body {
-    margin-left: 170px;
+    margin-right: 160px;
 }
 
 .box-banner+.box-banner {
@@ -242,24 +238,18 @@ ul {
     text-overflow: ellipsis;
 }
 
-.states-options .btn {
+.states-options.btn {
     position: relative;
     padding-right: 24px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.states-options .btn>i.fa {
+.states-options.btn>i.fa {
     position: absolute;
     top: 50%;
     right: 5px;
     margin-top: -8px;
-}
-
-.states-options.active .btn {
-    position: fixed;
-    top: 5px;
-    z-index: 1000;
 }
 
 
@@ -305,12 +295,17 @@ ul {
     margin: 20px 0 5px 0;
 }
 
-.location>*+* {
-    margin-left: 15px;
+.location-box {
+    margin-left: -10px;
+    padding: 10px;
+    padding-bottom: 0;
+    background-color: white;
+}
+.location-box > *{
+    margin-left: 10px;
 }
 
-.location>.states-options,
-.location-info {
+.location-box>* {
     display: inline-block;
     margin-bottom: 15px;
     vertical-align: middle;
@@ -319,6 +314,15 @@ ul {
 .location-info {
     font-size: 16px;
     color: #999;
+}
+
+.location.active .location-box {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #999; 
 }
 
 
@@ -340,7 +344,7 @@ ul {
 }
 
 .detail-logo {
-    float: right;
+    float: left;
     margin: 5px 30px;
     display: inline-block;
     width: 250px;
@@ -355,7 +359,7 @@ ul {
 
 .detail-summary {
     margin-top: 30px;
-    margin-right: 320px;
+    margin-left: 320px;
 }
 
 .detail-summary-item {

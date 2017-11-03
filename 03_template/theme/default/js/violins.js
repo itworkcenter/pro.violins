@@ -112,7 +112,7 @@ jQuery(document).on("click", ".select-list-item", function () {
 
 // STATE SELECT
 jQuery(window).scroll(function () {
-    var $state = jQuery("#StateSelect"),
+    var $state = jQuery("#Location"),
         stateTop = $state.offset().top,
         winTop = jQuery(this).scrollTop(),
         cls = "active";

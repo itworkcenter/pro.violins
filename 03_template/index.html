@@ -35,15 +35,18 @@
         </div>
 
         <div class="container-fluid">
-            <div class="location">
-                <div id="StateSelect" class="states-options">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#StatesOptions">
+            <div id="Location" class="location">
+                <div class="location-box">
+                    <a href="index.html" class="btn btn-primary">
+                        <i class="fa fa-home" aria-hidden="true"></i> Home
+                    </a>
+                    <button type="button" class="btn btn-primary states-options" data-toggle="modal" data-target="#StatesOptions">
                         <strong>Location:</strong>
                         <span id="SelectShow">United States</span>
                         <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
                     </button>
+                    <div class="location-info">Please use location button to choose State.</div>
                 </div>
-                <div class="location-info">Please use location button to choose State.</div>
 
                 <!-- Popup opotions -->
                 <div class="modal fade" id="StatesOptions" tabindex="-1" role="dialog" aria-labelledby="StatesOptions" aria-hidden="true">
@@ -85,12 +88,17 @@
                                     <a href="javascript:;">
                                         <div class="item-image sqr">
                                             <div class="sqr-body va">
-                                                <div class="item-image-video va"><i class="fa fa-play" aria-hidden="true"></i></div>
+                                                <div class="item-image-video va">
+                                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                                </div>
                                                 <img src="files/images/video.png" alt="violin">
                                             </div>
                                         </div>
                                         <div class="item-infos">
-                                            <div class="item-info title"><strong>The violin, also known informally as a fiddle, is a wooden string instrument  in theviolin family.</strong></div>
+                                            <div class="item-info title">
+                                                <strong>The violin, also known informally as a fiddle, is a wooden string instrument
+                                                    in theviolin family.</strong>
+                                            </div>
                                         </div>
                                     </a>
                                 </div>
