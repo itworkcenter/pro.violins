@@ -1,20 +1,207 @@
-*{
-    outline: 1px solid red;
+/* BASE */
+
+body {
+    position: relative;
+    color: #222;
 }
-.navbar{
+
+a {
+    color: #222;
+}
+
+a:hover {
+    color: #06f;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* MODULES */
+
+.box:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.box-side {
+    float: left;
+    width: 150px;
+}
+
+.box>.box-side:first-child {
+    margin-right: 20px;
+}
+
+.box-body {
+    margin-left: 170px;
+}
+.box-banner{
+    margin: 15px 0;
+    height: 300px;
+    background-color: #eee;
+}
+
+.select-list {}
+
+.select-list-item {
+    display: inline-block;
+    width: 25%;
+}
+
+.select-list-item>a {
+    position: relative;
+    display: block;
+    padding: 6px 12px 6px 30px;
+}
+
+.select-list-item.selected>a:before {
+    content: "\f058";
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    display: block;
+    margin-top: -8px;
+    width: 16px;
+    height: 16px;
+    font-size: 24px;
+    line-height: 16px;
+    font-family: FontAwesome;
+    color: #007bff;
+}
+
+.select-list-item>a:hover {
+    background-color: #eee;
+}
+
+.sqr {
+    position: relative;
+}
+
+.sqr:before {
+    content: "";
+    display: inline-block;
+    padding-top: 100%;
+}
+
+.sqr-body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.va {
+    letter-spacing: -10px;
+}
+
+.va:before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    height: 100%;
+}
+
+.va:before,
+.va>* {
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: normal;
+}
+
+.items {
+    letter-spacing: -10px;
+}
+
+.item {
+    position: relative;
+    margin: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    letter-spacing: normal;
+}
+.item:hover{
+    border: 1px solid #eee;
+}
+
+.items>.item {
+    display: inline-block;
+    width: 25%;
+}
+
+.item-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 60px;
+    text-align: center;
+    color: #999;
+}
+
+.item-image img {
+    max-width: 80%;
+    max-height: 90%;
+}
+
+.item-image.sqr:before {
+    padding-top: 70%;
+}
+
+.item-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 8px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 17px;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+}
+.item-title > a{
+    display: inline-block;
+    max-height: 34px;
+    vertical-align: middle;
+    overflow: hidden;
+    color: #666;
+    text-align: center;
+}
+.states-options.active .btn{
+    position: fixed;
+    top: 5px;
+    z-index: 1000;
+}
+/* OVERRID */
+.btn{
+    cursor: pointer;
+}
+.navbar {
     background-color: #37474f;
 }
+
 .navbar-brand,
 .nav-link:hover,
-.nav-link{
+.nav-link {
     color: #fefefe;
 }
+
 .navbar-toggler-icon {
     font-family: FontAwesome;
     font-size: 25px;
     color: white;
     cursor: pointer;
 }
+
 .navbar-toggler-icon:before {
     content: "\f0c9";
     display: inline-block;
@@ -22,35 +209,41 @@
 }
 
 .container-fluid {
+    width: 90%;
+    max-width: 1280px;
+}
+.jumbotron .container-fluid{
+    width: 100%;
+}
+
+footer {
+    margin-top: 20px;
+    min-height: 150px;
+    text-align: center;
+}
+.modal-lg {
     max-width: 90%;
 }
-
-/* MODULES */
-.box:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-.box-side{
-    float:left;
-    width: 150px;
-}
-.box-body{
-    margin-left: 160px;
-}
-.box-body > .box-side{
-    float: right;
-    min-width: 50px;
-}
-.box-body > .row{
-    margin-right: 50px;
-}
-
-@media screen and (max-width: 640px){
-    .box-side{
-        float: none;
+@media screen and (max-width: 768px) {
+    .select-list-item{
+        width: 33.33%;
     }
-    .box-body{
+}
+@media screen and (max-width: 640px) {
+    .select-list-item{
+        width: 50%;
+    }
+    .box-side {
+        float: none;
+        margin: 0!important;
+        width: auto;
+    }
+    .box-body {
         margin: 0;
+    }
+}
+@media screen and (max-width: 420px) {
+    .select-list-item{
+        width: 100%;
     }
 }
