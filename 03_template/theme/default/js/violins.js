@@ -139,6 +139,5 @@ jQuery(document).on("click", ".page-list .item a", function () {
 
 jQuery(document).on("click", ".item.video", function(){
     var youtubeId = jQuery(this).data("youtube-id");
-    alert(youtubeId);
-
+    new PopVideo({src: '//www.youtube.com/embed/' + youtubeId + '?autoplay=1'});
 });
