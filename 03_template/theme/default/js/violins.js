@@ -65,7 +65,7 @@ var states = {
 function setState(data) {
     var $state = jQuery("#StateList"),
         listTempl = function (key, value) {
-            return '<li class="select-list-item"><a href="list.html#' + key + '">' + value + '</a></li>'
+            return '<li id="' + key + '" class="select-list-item"><a href="list.html#' + key + '">' + value + '</a></li>'
         },
         listStr = "";
 
@@ -90,9 +90,11 @@ function getHrefargs() {
     }
     return arg;
 }
+var key = getHrefargs();
 
-if (getHrefargs()) {
-    jQuery("#SelectShow").html(states[getHrefargs()]);
+if (key) {
+    jQuery("#SelectShow").html(states[key]);
+    jQuery("#" + key).addClass("selected").siblings(".selected").removeClass("selected");
 }
 
 jQuery(document).on("click", ".select-list-item", function () {

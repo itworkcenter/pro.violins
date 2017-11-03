@@ -302,7 +302,7 @@ ul {
 }
 
 .location {
-    margin: 20px 0;
+    margin: 20px 0 5px 0;
 }
 
 .location>*+* {
@@ -310,14 +310,15 @@ ul {
 }
 
 .location>.states-options,
-.location>.path {
+.location-info {
     display: inline-block;
+    margin-bottom: 15px;
     vertical-align: middle;
 }
 
-.location>.path {
-    font-size: 24px;
-    font-weight: bold;
+.location-info {
+    font-size: 16px;
+    color: #999;
 }
 
 
