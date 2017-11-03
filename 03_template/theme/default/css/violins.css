@@ -39,10 +39,13 @@ ul {
 .box-body {
     margin-left: 170px;
 }
-.box-banner{
+
+.box-banner {
     margin: 15px 0;
-    height: 300px;
-    background-color: #eee;
+}
+
+.box-banner img {
+    max-width: 100%;
 }
 
 .select-list {}
@@ -125,8 +128,9 @@ ul {
     border: 1px solid transparent;
     letter-spacing: normal;
 }
-.item:hover{
-    border: 1px solid #eee;
+
+.item:hover {
+    border: 1px solid #999;
 }
 
 .items>.item {
@@ -168,23 +172,42 @@ ul {
     box-sizing: border-box;
     text-overflow: ellipsis;
 }
-.item-title > a{
+
+.item-title>* {
     display: inline-block;
     max-height: 34px;
     vertical-align: middle;
     overflow: hidden;
-    color: #666;
-    text-align: center;
+    text-overflow: ellipsis;
 }
-.states-options.active .btn{
+
+.states-options .btn {
+    position: relative;
+    padding-right: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.states-options .btn>i.fa {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    margin-top: -8px;
+}
+
+.states-options.active .btn {
     position: fixed;
     top: 5px;
     z-index: 1000;
 }
+
+
 /* OVERRID */
-.btn{
+
+.btn {
     cursor: pointer;
 }
+
 .navbar {
     background-color: #37474f;
 }
@@ -212,8 +235,13 @@ ul {
     width: 90%;
     max-width: 1280px;
 }
-.jumbotron .container-fluid{
+
+.jumbotron .container-fluid {
     width: 100%;
+}
+
+.location {
+    margin: 20px 0;
 }
 
 footer {
@@ -221,19 +249,23 @@ footer {
     min-height: 150px;
     text-align: center;
 }
+
 .modal-lg {
     max-width: 90%;
 }
+
 @media screen and (max-width: 768px) {
-    .select-list-item{
+    .select-list-item {
         width: 33.33%;
     }
 }
+
 @media screen and (max-width: 640px) {
-    .select-list-item{
+    .select-list-item {
         width: 50%;
     }
     .box-side {
+        display: none;
         float: none;
         margin: 0!important;
         width: auto;
@@ -242,8 +274,9 @@ footer {
         margin: 0;
     }
 }
+
 @media screen and (max-width: 420px) {
-    .select-list-item{
+    .select-list-item {
         width: 100%;
     }
 }
