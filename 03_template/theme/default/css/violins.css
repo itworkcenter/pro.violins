@@ -299,7 +299,7 @@ ul {
     margin-left: -10px;
     padding: 10px;
     padding-bottom: 0;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 .location-box > *{
     margin-left: 10px;
@@ -307,22 +307,23 @@ ul {
 
 .location-box>* {
     display: inline-block;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     vertical-align: middle;
 }
 
 .location-info {
     font-size: 16px;
-    color: #999;
 }
 
 .location.active .location-box {
     position: fixed;
     top: 0;
+    margin-right: 20px;
     z-index: 1000;
     border-bottom-left-radius:5px;
     border-bottom-right-radius: 5px;
     border: 1px solid #999; 
+    border-top: 0;
 }
 
 
