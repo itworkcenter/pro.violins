@@ -91,7 +91,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home
                             <span class="sr-only">(current)</span>
@@ -113,14 +113,11 @@
                         </div>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+
             </div>
         </nav>
     </header>
-
+    <a href="#" id="item-1"></a>
     <main role="main">
 
         <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -141,41 +138,252 @@
             <!-- Example row of columns -->
             <div class="box">
                 <div class="box-side">
+                    <div id="StateSelect" class="states-options">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#StatesOptions">
+                            <span id="SelectShow">United States</span>
+                            <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
 
+                    <!-- Modal -->
+                    <div class="modal fade" id="StatesOptions" tabindex="-1" role="dialog" aria-labelledby="StatesOptions" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">United States</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul id="StateList" class="select-list">
+                                        <!-- <li class="select-list-item"><a href="#">moRI</a></li> -->
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button id="SelectSave" type="button" class="btn btn-primary">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-banner">
+
+                    </div>
                 </div>
                 <div class="box-body">
                     <div class="row">
-                        <div class="col-md-4">
-                            <h2>Heading</h2>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                                mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
-                                magna mollis euismod. Donec sed odio dui. </p>
-                            <p>
-                                <a class="btn btn-secondary" href="#" role="button">View details »</a>
-                            </p>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="item sqr">
+                                <div class="sqr-body">
+                                    <div class="item-image sqr">
+                                        <div class="sqr-body va">
+                                            <img src="#" alt="ss">
+                                        </div>
+                                    </div>
+                                    <div class="item-title va">
+                                        <a href="#">title title title title title title title title title title title title title title
+                                            title
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <h2>Heading</h2>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                                mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
-                                magna mollis euismod. Donec sed odio dui. </p>
-                            <p>
-                                <a class="btn btn-secondary" href="#" role="button">View details »</a>
-                            </p>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="item sqr">
+                                <div class="sqr-body">
+                                    <div class="item-image sqr">
+                                        <div class="sqr-body va">
+                                            <img src="#" alt="ss">
+                                        </div>
+                                    </div>
+                                    <div class="item-title va">
+                                        <a href="#">title title title title title title title title title title title title title title
+                                            title
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <h2>Heading</h2>
-                            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
-                                ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                                condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                            <p>
-                                <a class="btn btn-secondary" href="#" role="button">View details »</a>
-                            </p>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="item sqr">
+                                <div class="sqr-body">
+                                    <div class="item-image sqr">
+                                        <div class="sqr-body va">
+                                            <img src="#" alt="ss">
+                                        </div>
+                                    </div>
+                                    <div class="item-title va">
+                                        <a href="#">title title title title title title title title title title title title title title
+                                            title
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="item sqr">
+                                <div class="sqr-body">
+                                    <div class="item-image sqr">
+                                        <div class="sqr-body va">
+                                            <img src="#" alt="ss">
+                                        </div>
+                                    </div>
+                                    <div class="item-title va">
+                                        <a href="#">title title title title title title title title title title title title title title
+                                            title
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="item sqr">
+                                <div class="sqr-body">
+                                    <div class="item-image sqr">
+                                        <div class="sqr-body va">
+                                            <img src="#" alt="ss">
+                                        </div>
+                                    </div>
+                                    <div class="item-title va">
+                                        <a href="#">title title title title title title title title title title title title title title
+                                            title
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="item sqr">
+                                <div class="sqr-body">
+                                    <div class="item-image sqr">
+                                        <div class="sqr-body va">
+                                            <img src="#" alt="ss">
+                                        </div>
+                                    </div>
+                                    <div class="item-title va">
+                                        <a href="#">title title title title title title title title title title title title title title
+                                            title
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="item sqr">
+                                <div class="sqr-body">
+                                    <div class="item-image sqr">
+                                        <div class="sqr-body va">
+                                            <img src="#" alt="ss">
+                                        </div>
+                                    </div>
+                                    <div class="item-title va">
+                                        <a href="#">title title title title title title title title title title title title title title
+                                            title
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="item sqr">
+                                <div class="sqr-body">
+                                    <div class="item-image sqr">
+                                        <div class="sqr-body va">
+                                            <img src="#" alt="ss">
+                                        </div>
+                                    </div>
+                                    <div class="item-title va">
+                                        <a href="#">title title title title title title title title title title title title title title
+                                            title
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="item sqr">
+                                <div class="sqr-body">
+                                    <div class="item-image sqr">
+                                        <div class="sqr-body va">
+                                            <img src="#" alt="ss">
+                                        </div>
+                                    </div>
+                                    <div class="item-title va">
+                                        <a href="#">title title title title title title title title title title title title title title
+                                            title
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="item sqr">
+                                <div class="sqr-body">
+                                    <div class="item-image sqr">
+                                        <div class="sqr-body va">
+                                            <img src="#" alt="ss">
+                                        </div>
+                                    </div>
+                                    <div class="item-title va">
+                                        <a href="#">title title title title title title title title title title title title title title
+                                            title
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="item sqr">
+                                <div class="sqr-body">
+                                    <div class="item-image sqr">
+                                        <div class="sqr-body va">
+                                            <img src="#" alt="ss">
+                                        </div>
+                                    </div>
+                                    <div class="item-title va">
+                                        <a href="#">title title title title title title title title title title title title title title
+                                            title
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="item sqr">
+                                <div class="sqr-body">
+                                    <div class="item-image sqr">
+                                        <div class="sqr-body va">
+                                            <img src="#" alt="ss">
+                                        </div>
+                                    </div>
+                                    <div class="item-title va">
+                                        <a href="#">title title title title title title title title title title title title title title
+                                            title
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="item sqr">
+                                <div class="sqr-body">
+                                    <div class="item-image sqr">
+                                        <div class="sqr-body va">
+                                            <img src="#" alt="ss">
+                                        </div>
+                                    </div>
+                                    <div class="item-title va">
+                                        <a href="#">title title title title title title title title title title title title title title
+                                            title
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="box-side">
 
-                    </div>
+
 
                 </div>
 
@@ -190,16 +398,72 @@
         <p>&copy; Company 2017</p>
     </footer>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script>
-        window.jQuery || document.write('<script src="theme/default/js/jquery.min.js"><\/script>')
-    </script>
-    <script src="theme/default/js/popper.min.js"></script>
-    <script src="theme/default/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script>
+    window.jQuery || document.write('<script src="theme/default/js/jquery.min.js"><\/script>')
+</script>
+<script src="theme/default/js/popper.min.js"></script>
+<script src="theme/default/js/bootstrap.min.js"></script>
+<script>
+    // ADD STATES
+    function setState(data) {
+        var $state = jQuery("#StateList"),
+            listTempl = function (key, value) {
+                return '<li class="select-list-item"><a href="#' + key + '">' + value + '</a></li>'
+            },
+            listStr = "";
+
+        if (data) {
+            for (var i in data) {
+                var state = data[i];
+                listStr += listTempl(i, state);
+            }
+            $state.html(listStr);
+        }
+    }
+
+    // INITIALIZE
+    setState(states);
+
+    //  SELECT LIST
+    jQuery(document).on("click", ".select-list-item", function () {
+        jQuery(this).toggleClass("selected").siblings(".selected").removeClass("selected");
+    })
+    jQuery("#SelectSave").on("click", function () {
+        var $modal = jQuery(this).closest(".modal"),
+            $close = jQuery(".close", $modal),
+            selectedVal = jQuery(".selected a", $modal).html();
+
+        jQuery("#SelectShow").html(selectedVal);
+
+        $close.click();
+    })
+
+    // STATE SELECT
+    jQuery(window).scroll(function () {
+        var $state = jQuery("#StateSelect"),
+            stateTop = $state.offset().top,
+            winTop = jQuery(this).scrollTop(),
+            cls = "active";
+            
+            if(stateTop < winTop){
+                if(!$state.hasClass(cls)){
+                    $state.addClass(cls);
+                }
+            }else{
+                if($state.hasClass(cls)){
+                    $state.removeClass(cls);
+                }             
+            }
+            
+    })
+</script>
